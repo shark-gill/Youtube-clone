@@ -1,0 +1,4 @@
+# Discover settings
+.notebook/
+node_modules/
+package-lock.json

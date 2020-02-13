@@ -23,4 +23,4 @@ app.use(routes.videos, videoRouter);
 
 export default app;
 
-// Partials with Pug
+// Partials with Pug 부터 ㅅㅂ

@@ -1,11 +1,10 @@
 doctype html
 html
-    head
+    head      
         title | SuTube
+        script.fontawesome(src="https://kit.fontawesome.com/86510c550f.js", crossorigin="anonymous")  
     body
-        header
-            h1 SuTube
+        include ../partials/header.pug
         main
             block content
-        footer
-            span &copy; SuTube
+        include ../partials/footer.pug

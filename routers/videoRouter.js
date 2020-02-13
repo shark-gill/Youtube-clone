@@ -10,10 +10,9 @@ import {
 
 const videoRouter = express.Router();
 
-videoRouter.get(routes.videos, videoController);
 videoRouter.get(routes.upload, uploadController);
-videoRouter.get(routes.video_detail, videoDetailController);
-videoRouter.get(routes.edit_video), editVideoController;
-videoRouter.get(routes.delete_video, deleteVideoController);
+videoRouter.get(routes.videoDetail, videoDetailController);
+videoRouter.get(routes.editVideo), editVideoController;
+videoRouter.get(routes.deleteVideo, deleteVideoController);
 
 export default videoRouter;

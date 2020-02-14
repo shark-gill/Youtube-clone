@@ -1,6 +1,8 @@
 import routes from "../routes";
 
 export const home = (req, res) => {
+  // const videos = await Video.find({});
+  // console.log(videos);
   res.render("home", { pageTitle: "Home", videos: videos });
 };
 

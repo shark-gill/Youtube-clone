@@ -8,11 +8,22 @@ export const search = (req, res) => {
   const {
     query: { term: searchingBy }
   } = req;
-  res.render("search", { pageTitle: "Search", searchingBy: searchingBy });
+  res.render("search", {
+    pageTitle: "Search",
+    searchingBy: searchingBy,
+    videos: videos
+  });
 };
 
-export const upload = (req, res) =>
+export const getUpload = (req, res) => {
   res.render("upload", { pageTitle: "Upload" });
+};
+
+export const postUpload = (req, res) => {
+  const {
+    body: { file, title, decription }
+  } = req;
+};
 
 export const videoDetail = (req, res) =>
   res.render("videoDetail", { pageTitle: "Video Detail" });

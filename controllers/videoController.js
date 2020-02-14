@@ -1,21 +1,24 @@
-export const homeController = (req, res) =>
-  res.render("home", { pageTitle: "Home" });
+import { videos } from "../db";
 
-export const searchController = (req, res) => {
+export const home = (req, res) => {
+  res.render("home", { pageTitle: "Home", videos: videos });
+};
+
+export const search = (req, res) => {
   const {
     query: { term: searchingBy }
   } = req;
   res.render("search", { pageTitle: "Search", searchingBy: searchingBy });
 };
 
-export const uploadController = (req, res) =>
+export const upload = (req, res) =>
   res.render("upload", { pageTitle: "Upload" });
 
-export const videoDetailController = (req, res) =>
+export const videoDetail = (req, res) =>
   res.render("videoDetail", { pageTitle: "Video Detail" });
 
-export const editVideoController = (req, res) =>
+export const editVideo = (req, res) =>
   res.render("editVideo", { pageTitle: "Edit Video" });
 
-export const deleteVideoController = (req, res) =>
+export const deleteVideo = (req, res) =>
   res.render("deleteVideo", { pageTitle: "Delete Video" });

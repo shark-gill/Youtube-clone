@@ -26,13 +26,8 @@
         color: white;
         font-weight: 600;
         text-transform: uppercase;
-        text-decoration: none;
         li:not(:last-child) {
           margin-right: 15px;
-        }
-        a {
-          text-decoration: none;
-          color: white;
         }
       }
       form {
@@ -44,7 +39,6 @@
           font-size: 14px;
           color: $black;
           font-weight: 600;
-          max-width: none;
           max-width: none;
           &::placeholder {
             font-weight: 300;
